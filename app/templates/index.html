@@ -1,0 +1,14 @@
+{% include 'header.html' %}
+
+<form action="/{{GVAPI_APP_PREFIX}}/submit_url" method="POST">
+	<div class="row">
+		<div class="twelve columns">
+			<label for="image_url">Image URL</label>
+			<input class="u-full-width" type="text" placeholder="image url" id="image_url" name="image_url">
+		</div>
+	</div>
+	
+	<input class="button-primary" type="submit" value="Submit">
+</form>
+
+{% include 'footer.html' %}
